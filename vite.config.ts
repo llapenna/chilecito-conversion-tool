@@ -5,5 +5,8 @@ import tailwindcss from '@tailwindcss/vite'
 
 // https://vite.dev/config/
 export default defineConfig({
+  server: {
+    allowedHosts: ['conversion.lapenna.dev'],
+  },
   plugins: [react(), tailwindcss()],
 })
