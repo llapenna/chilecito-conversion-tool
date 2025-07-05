@@ -92,7 +92,7 @@ function App() {
             />
           </div>
 
-          <div>
+          {/* <div>
             <label htmlFor="arsCredit" className="block text-sm font-medium text-gray-700 mb-2">
               ARS (Dólar Tarjeta)
             </label>
@@ -105,7 +105,7 @@ function App() {
               placeholder="0.00"
               step="0.01"
             />
-          </div>
+          </div> */}
 
           <div>
             <label htmlFor="arsBancoNacion" className="block text-sm font-medium text-gray-700 mb-2">
