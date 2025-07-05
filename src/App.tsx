@@ -1,13 +1,13 @@
 import { useState } from 'react'
 
 const CLP = 922
-const ARS_CREDIT = 1638
+// const ARS_CREDIT = 1638
 const ARS_BLUE = 1220
 
 function App() {
   const [usd, setUsd] = useState('')
   const [clp, setClp] = useState('')
-  const [arsCredit, setArsCredit] = useState('')
+  // const [arsCredit, setArsCredit] = useState('')
   const [arsBlue, setArsBlue] = useState('')
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -21,7 +21,7 @@ function App() {
         setUsd(String(value))
         
         setClp((value * CLP).toFixed(2))
-        setArsCredit((value * ARS_CREDIT).toFixed(2))
+        // setArsCredit((value * ARS_CREDIT).toFixed(2))
         setArsBlue((value * ARS_BLUE).toFixed(2))
         break
       case 'clp': {
@@ -29,18 +29,18 @@ function App() {
 
         const usdValue = value / CLP
         setUsd(usdValue.toFixed(2))
-        setArsCredit((usdValue * ARS_CREDIT).toFixed(2))
+        // setArsCredit((usdValue * ARS_CREDIT).toFixed(2))
         setArsBlue((usdValue * ARS_BLUE).toFixed(2))
       }
       break
-      case 'arsCredit': {
-        setArsCredit(String(value))
+      // case 'arsCredit': {
+      //   // setArsCredit(String(value))
 
-        const usdValue = value / ARS_CREDIT
-        setUsd(usdValue.toFixed(2))
-        setClp((usdValue * CLP).toFixed(2))
-        setArsBlue((usdValue * ARS_BLUE).toFixed(2))
-      }
+      //   const usdValue = value / ARS_CREDIT
+      //   setUsd(usdValue.toFixed(2))
+      //   setClp((usdValue * CLP).toFixed(2))
+      //   setArsBlue((usdValue * ARS_BLUE).toFixed(2))
+      // }
       break
       case 'arsBlue': {
         setArsBlue(String(value))
@@ -48,7 +48,7 @@ function App() {
         const usdValue = value / ARS_BLUE
         setUsd(usdValue.toFixed(2))
         setClp((usdValue * CLP).toFixed(2))
-        setArsCredit((usdValue * ARS_CREDIT).toFixed(2))
+        // setArsCredit((usdValue * ARS_CREDIT).toFixed(2))
       }
       break
     }
