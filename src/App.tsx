@@ -18,7 +18,7 @@ function App() {
 
   const clpNumber = parseFloat(clpValue) || 0
   const usdValue = clpNumber / CLP
-  const arsValue = clpNumber / ARS_BLUE
+  const arsValue = usdValue * ARS_BLUE
 
   return (
     <div className="min-h-screen bg-gray-50 py-8 px-4">
